@@ -1,1 +1,27 @@
-@import "tailwindcss";
+@import 'tailwindcss';
+
+@layer components {
+  .link {
+    @apply underline hover:underline-offset-2;
+  }
+
+  .stat-item {
+    @apply rounded bg-green-400 px-4 py-2;
+  }
+
+  .stat-item > :first-child {
+    @apply font-bold;
+  }
+
+  button {
+    @apply px-2 py-1 bg-gray-200 border-gray-800 border rounded;
+  }
+
+  input {
+    @apply border rounded bg-white;
+  }
+
+  input:disabled {
+    @apply bg-gray-200;
+  }
+}
